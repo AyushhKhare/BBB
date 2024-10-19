@@ -17,23 +17,23 @@ const scroller = new LocomotiveScroll({
 })
 
 
-document.querySelector("#main").addEventListener("scroll",()=>{
-    console.log(window.screenX)
-})
-window.addEventListener("wheel", ev => {
+// document.querySelector("#main").addEventListener("scroll",()=>{
+//     console.log(window.screenX)
+// })
+// window.addEventListener("wheel", ev => {
 
-    const direction_1 = ev.deltaY;
+//     const direction_1 = ev.deltaY;
 
-    if (direction_1 < 0) console.log('scrolling up');
-    if (direction_1 > 0) console.log('scrolling down');
+//     if (direction_1 < 0) console.log('scrolling up');
+//     if (direction_1 > 0) console.log('scrolling down');
     
 
-    const direction_2 = ev.wheelDeltaY;
+//     const direction_2 = ev.wheelDeltaY;
 
-    if (direction_2 > 0) console.log('scrolling up');
-    if (direction_2 < 0) console.log('scrolling down');
+//     if (direction_2 > 0) console.log('scrolling up');
+//     if (direction_2 < 0) console.log('scrolling down');
 
-});
+// });
     
 // function coordinate(event) {
 //     let x = event.clientX + 100;
@@ -65,6 +65,14 @@ tl.from(".body p",{
 tl.from(".body h2",{
     y:200,
     
+})
+
+gsap.to(".logo h1",{
+    rotationX:360, 
+    ease:Linear.easeNone, 
+    repeat:-1,
+    repeatDelay:10,
+    duration:0.75
 })
 
 gsap.from(".name",{

@@ -189,7 +189,7 @@ a{
 .center{
     width: max-content;
     margin: auto;
-    margin-top:30vh ;
+    margin-top:15vh ;
 }
 .body .hero-h1{
     overflow: hidden;
@@ -379,6 +379,7 @@ a{
     text-align: right;
     font-size: 2rem;
     transition: 0.15s ease-in-out;
+    text-wrap: nowrap;
 }
 
 .work-text h3:hover{
@@ -475,7 +476,7 @@ a{
   .ag-courses-item_bg {
     height: 128px;
     width: 128px;
-    background-color: var(--color30);
+    background-color:var(--color30) ;
   
     z-index: 1;
     position: absolute;
@@ -489,19 +490,19 @@ a{
     transition: all .5s ease;
   }
   .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-    background-color: var(--color30);
+    background-color:var(--color30) ;
   }
   .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-    background-color: var(--color30);
+    background-color:var(--color30) ;
   }
   .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-    background-color: var(--color30);
+    background-color:var(--color30) ;
   }
   .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-    background-color: var(--color30);
+    background-color:var(--color30) ;
   }
   .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-    background-color: var(--color30);
+    background-color:var(--color30) ;
   }
   
   
