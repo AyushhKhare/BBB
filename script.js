@@ -1,21 +1,40 @@
 var tl = gsap.timeline();
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector("#home"),
-//     smooth:true,
-//     lerp:0.075
-// })
-// const scrolled = new LocomotiveScroll({
-//     el: document.querySelector("#intro"),
-//     smooth:true,
-//     lerp:0.075
-// })
-// const scroller = new LocomotiveScroll({
-//     el: document.querySelector("#work"),
-//     smooth:true,
-//     lerp:0.1,
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("#home"),
+    smooth:true,
+    lerp:0.075
+})
+const scrolled = new LocomotiveScroll({
+    el: document.querySelector("#intro"),
+    smooth:true,
+    lerp:0.075
+})
+const scroller = new LocomotiveScroll({
+    el: document.querySelector("#work"),
+    smooth:true,
+    lerp:0.1,
 
-// })
+})
 
+
+document.querySelector("#main").addEventListener("scroll",()=>{
+    console.log(window.screenX)
+})
+window.addEventListener("wheel", ev => {
+
+    const direction_1 = ev.deltaY;
+
+    if (direction_1 < 0) console.log('scrolling up');
+    if (direction_1 > 0) console.log('scrolling down');
+    
+
+    const direction_2 = ev.wheelDeltaY;
+
+    if (direction_2 > 0) console.log('scrolling up');
+    if (direction_2 < 0) console.log('scrolling down');
+
+});
+    
 // function coordinate(event) {
 //     let x = event.clientX + 100;
 //     let y = event.clientY + 100;
